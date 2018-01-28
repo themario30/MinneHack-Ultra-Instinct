@@ -17,7 +17,6 @@ def readFile():
     script_dir = os.path.dirname(__file__)
     rel_path = "csv\Hackathon dataset.csv"
     abs_file_path = os.path.join(script_dir, rel_path)
-    
     with open(abs_file_path, newline= "") as file:
         reader = csv.reader(file, delimiter= ',', quotechar= '|')
         for row in reader:
