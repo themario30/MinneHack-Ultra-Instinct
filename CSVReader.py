@@ -11,16 +11,18 @@ class Player:
     
     def getRegistry(self, registry):
         return self.__Registry[registry]
-    
-    def getName(self, index):
-        for i in range(0,len(self.__Registry)):
+        
+    def getRegistryViaIndex(self, index):
+        count = 0
+        for i in self.__Registry:
+            if(count == index):
+                return self.getRegistry(i)
+            count += 1
         return 0
-     
 def readFile():
 
     plist = []
     firstLine = True
-    Fields = Player()
         
     script_dir = os.path.dirname(__file__)
     rel_path = str(sys.argv[1])
@@ -31,23 +33,24 @@ def readFile():
             reader = csv.reader(file, delimiter= ',', quotechar= '|')
             for row in reader:
                 if(firstLine):
-                    for field in row:
-                        Fields.setRegistry(field,0)
+                    Fields = row;
+                    firstLine = False
                 #We can read the file now
                 temp = Player()
                 for i in range(0, len(row)):
-                    temp.setRegistry(Fields,row[i])
-            return
+                    temp.setRegistry(Fields[i],row[i])
+                plist.append(temp)
             
     else:
         print("file not found", rel_path)
         
-    return 0
+    return plist
 
  
     
 def main():
     players = readFile()
+    print(players[2].getRegistryViaIndex(1))
     
    
 
