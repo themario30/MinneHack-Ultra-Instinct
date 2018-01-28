@@ -17,11 +17,14 @@ def readFile():
     script_dir = os.path.dirname(__file__)
     rel_path = "csv\Hackathon dataset.csv"
     abs_file_path = os.path.join(script_dir, rel_path)
-    with open(abs_file_path, newline= "") as file:
-        reader = csv.reader(file, delimiter= ',', quotechar= '|')
-        for row in reader:
-            print(row)
-            return
+   if (os.path.exists(abs_file_path)):
+        with open(abs_file_path, newline= "") as file:
+            reader = csv.reader(file, delimiter= ',', quotechar= '|')
+            for row in reader:
+                print(row)
+                return
+    else:
+        print("file not found", rel_path)
    
     if (os.path.exists(abs_file_path)):
         with open(abs_file_path, newline= "") as file:
@@ -38,7 +41,6 @@ def readFile():
     
 def main():
     footballPlayers = readFile
-    readFile()
    
 
 main()
