@@ -1,0 +1,53 @@
+abrasion
+blister
+burn
+bursitis
+concussion
+contusion
+dehydration
+dislocation
+fracture
+heatstroke/heat exhaustion
+hemorrhage 
+hernia
+hyperextension
+infection(including skin infection)
+inflammation
+internal injury (non hemorrhage)
+laceration
+ligament sprain (complete tear)
+ligament sprain (incomplete tear)
+muscle sprain (complete tear)
+muscle sprain (incomplete tear)
+nerve injury
+separation
+stress fracture
+tendonitis
+tendon strain (complete tear)
+tendon strain (incomplete tear)
+torn cartilage
+other, describe briefly
+avulsion
+frostbite/cold related
+ligament sprain, severity unknown
+muscle strain, severity unknown
+tendon strain, severity unknown
+multiple injuries
+subluxation
+skin infection
+infection(other than skin)
+ligament sprain
+muscle sprain
+tendon sprain
+cardiac event (acute)
+chronic disease/trait (diabetes, sickle cell)
+respiratory event (acute)
+apophysitis
+plantar fasciitis
+shin splints
+spondylolysis
+heat illness/injury
+
+
+
+
