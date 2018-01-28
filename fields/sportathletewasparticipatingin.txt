@@ -1,0 +1,25 @@
+boys football
+boys soccer
+girls soccer
+girls volleyball
+boys basketball
+girls basketball
+boys wrestling
+boys baseball
+girls softball
+girls field hockey
+girls gymnastics
+boys ice hockey 
+boys lacrosse
+girls lacrosse
+boys swimming/diving
+girls swimming/diving
+boys track and field
+girls track and field
+boys volleyball
+cheerleading
+other, describe
+boys cross country
+girls cross country
+boys tennis
+girls tennis

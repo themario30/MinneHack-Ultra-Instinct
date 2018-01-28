@@ -1,0 +1,14 @@
+returned to activity in 1-2 days
+returned to activity in 3-6 days
+returned to activity in 7-9 days
+returned to activity in 10-21 days
+returned to activity in 22 days or more
+medical disqualification for season
+medical disqualification for career
+athlete chooses not to continue (no medical disqualification)
+athlete released from team (no medical disqualification)
+permanent paralysis
+fatality
+other
+returned to activity in less than 1 days (should only be chosen for fractures, concussions, dental injuries)
+season ended before athlete returned to activity
