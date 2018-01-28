@@ -1,0 +1,26 @@
+head/face
+eye(s)
+ear(s)
+nose
+mouth
+teeth
+neck/cervical spine
+shoulder
+upper arm
+elbow
+forearm
+wrist
+hand/finger
+chest/t-spine/ribs
+abdomen
+lower back/l-spine/pelvis
+hip
+thigh/upper leg
+knee
+lower leg
+ankle
+foot/toe
+other
+mouth
+clavicle/collar bone
+male genitalia
