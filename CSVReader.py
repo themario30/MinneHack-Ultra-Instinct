@@ -22,6 +22,15 @@ def readFile():
         for row in reader:
             print(row)
             return
+   
+    if (os.path.exists(abs_file_path)):
+        with open(abs_file_path, newline= "") as file:
+            reader = csv.reader(file, delimiter= ',', quotechar= '|')
+            for row in reader:
+                print(row)
+                return
+    else:
+        print("file not found", rel_path)
         
     return 0
 
@@ -29,6 +38,7 @@ def readFile():
     
 def main():
     footballPlayers = readFile
+    readFile()
    
 
 main()
