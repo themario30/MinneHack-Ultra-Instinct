@@ -1,5 +1,6 @@
-#!/bin/env python3
+
 import csv
+import sys
 import os
 
 class Player:
@@ -15,23 +16,17 @@ class Player:
         
 def readFile():
     script_dir = os.path.dirname(__file__)
-    rel_path = "csv\Hackathon dataset.csv"
-    abs_file_path = os.path.join(script_dir, rel_path)
-   if (os.path.exists(abs_file_path)):
-        with open(abs_file_path, newline= "") as file:
-            reader = csv.reader(file, delimiter= ',', quotechar= '|')
-            for row in reader:
-                print(row)
-                return
-    else:
-        print("file not found", rel_path)
-   
+    rel_path = "\\" + str(sys.argv[1])
+    abs_file_path = script_dir + rel_path
+    
     if (os.path.exists(abs_file_path)):
         with open(abs_file_path, newline= "") as file:
             reader = csv.reader(file, delimiter= ',', quotechar= '|')
             for row in reader:
-                print(row)
-                return
+                #We can read the file now
+                if(row[0] != None):
+                    print(row[0])
+            
     else:
         print("file not found", rel_path)
         
@@ -40,7 +35,7 @@ def readFile():
  
     
 def main():
-    footballPlayers = readFile
+    readFile()
    
 
 main()
