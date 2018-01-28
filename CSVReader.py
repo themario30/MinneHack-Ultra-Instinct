@@ -1,4 +1,5 @@
 import csv
+import os
 
 class Player:
     def __init__(self):
@@ -12,7 +13,11 @@ class Player:
         
         
 def readFile():
-    with open("csv/Hackathon dataset.csv", newline= "\n") as file:
+    script_dir = os.path.dirname(__file__)
+    rel_path = "csv\Hackathon dataset.csv"
+    abs_file_path = os.path.join(script_dir, rel_path)
+    
+    with open(abs_file_path, newline= "") as file:
         reader = csv.reader(file, delimiter= ',', quotechar= '|')
         for row in reader:
             print(row)
