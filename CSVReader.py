@@ -1,4 +1,3 @@
-
 import csv
 import sys
 import os
@@ -16,7 +15,7 @@ class Player:
         
 def readFile():
     script_dir = os.path.dirname(__file__)
-    rel_path = "\\" + str(sys.argv[1])
+    rel_path = "/" + str(sys.argv[1])
     abs_file_path = script_dir + rel_path
     
     if (os.path.exists(abs_file_path)):
@@ -24,7 +23,7 @@ def readFile():
             reader = csv.reader(file, delimiter= ',', quotechar= '|')
             for row in reader:
                 #We can read the file now
-                if(row[0] != None):
+                if(row != None):
                     print(row[0])
             
     else:
